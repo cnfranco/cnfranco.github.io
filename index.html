@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartão de Visitas</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
         body {
             background-color: #121212;
             color: #ffffff;
-            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -18,24 +23,37 @@
         }
         .card {
             background: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-            width: 300px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+            width: 320px;
+            transition: transform 0.3s ease-in-out;
         }
-        .links a {
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .links a, .menu a {
             display: block;
             color: #00bcd4;
             text-decoration: none;
-            margin: 10px 0;
+            padding: 8px 0;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .links a:hover, .menu a:hover {
+            color: #ff9800;
         }
         .menu {
-            margin-top: 20px;
-        }
-        .menu a {
-            color: #ff9800;
-            text-decoration: none;
-            margin: 0 10px;
+            margin-top: 15px;
         }
     </style>
 </head>
