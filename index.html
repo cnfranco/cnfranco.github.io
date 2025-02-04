@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página no GitHub Pages</title>
+    <title>Cartão de Visitas</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            width: 300px;
+        }
+        .links a {
+            display: block;
+            color: #00bcd4;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu a {
+            color: #ff9800;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Esta é minha página hospedada no GitHub Pages.</p>
+    <div class="card">
+        <h1>Seu Nome</h1>
+        <p>Pesquisador(a) | Cosmologia</p>
+        <div class="links">
+            <a href="#" target="_blank">Lattes</a>
+            <a href="#" target="_blank">ORCID</a>
+            <a href="#" target="_blank">Inspire</a>
+            <a href="#" target="_blank">NASA ADS</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+        <div class="menu">
+            <a href="#">Publicações</a>
+        </div>
+    </div>
 </body>
 </html>
