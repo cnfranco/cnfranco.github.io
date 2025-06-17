@@ -1,90 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Camila Franco – Astrophysicist</title>
+    <title>Camila Franco – Astrofísica</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
       body { font-family: 'Inter', sans-serif; }
     </style>
   </head>
   <body class="bg-white text-gray-800">
-    <!-- Header -->
-    <header class="flex justify-between items-center p-8 border-b border-gray-200">
-      <div class="text-3xl font-bold">Camila Franco</div>
+    <!-- Top Bar -->
+    <header class="flex justify-between items-center p-6 border-b border-gray-200">
+      <div class="flex items-center space-x-2">
+        <div class="w-3 h-3 bg-blue-600 rounded-full"></div>
+        <h1 class="text-lg font-bold">Camila Franco</h1>
+        <span class="text-sm text-gray-500">/ Astrofísica</span>
+      </div>
       <nav class="space-x-6 text-sm">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#research" class="hover:underline">Research</a>
-        <a href="#publications" class="hover:underline">Publications</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="#sobre" class="text-blue-600 font-semibold">SOBRE MIM</a>
+        <a href="#curriculo" class="hover:underline">CURRÍCULO</a>
+        <a href="#projetos" class="hover:underline">PROJETOS</a>
+        <a href="#contato" class="hover:underline">CONTATO</a>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="flex flex-col items-start justify-center p-12 md:p-20 max-w-5xl mx-auto">
-      <h1 class="text-4xl md:text-6xl font-light leading-tight">Astrophysics, Large-Scale Structure<br />& Cosmology</h1>
-      <p class="mt-6 text-lg text-gray-600 max-w-2xl">
-        I'm a researcher focused on the structure and evolution of the universe, particularly through galaxy surveys and matter distribution models.
-      </p>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="bg-gray-50 py-16 px-8">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-        <p class="text-gray-700 leading-relaxed">
-          I'm currently a PhD student at [Institution Name], working with the ALFALFA catalogue and observational constraints on cosmological parameters.
-          My background includes physics, data science, and science communication. I'm interested in how we can map and understand the cosmic web using neutral hydrogen.
-        </p>
-      </div>
-    </section>
-
-    <!-- Research -->
-    <section id="research" class="py-16 px-8">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-semibold mb-4">Research Interests</h2>
-        <ul class="list-disc list-inside space-y-2 text-gray-700">
-          <li>Large-scale structure of the universe</li>
-          <li>HI galaxy surveys (e.g., ALFALFA)</li>
-          <li>Cosmological parameter estimation</li>
-          <li>Data analysis pipelines for astrophysics</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Publications -->
-    <section id="publications" class="bg-gray-50 py-16 px-8">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-semibold mb-4">Selected Publications</h2>
-        <ul class="space-y-4 text-gray-700">
-          <li>
-            <strong>Measuring the matter fluctuations in the Local Universe with the ALFALFA catalogue</strong><br/>
-            Franco, C. et al., 2024 – <a href="#" class="text-blue-500 hover:underline">arXiv link</a>
-          </li>
-          <!-- Add more here -->
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-16 px-8">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-        <p class="text-gray-700">Feel free to reach out via <a href="mailto:email@example.com" class="text-blue-500 hover:underline">email@example.com</a> or connect through the links below.</p>
-        <div class="flex space-x-4 mt-4">
-          <a href="https://github.com/yourusername" class="text-gray-500 hover:text-black">GitHub</a>
-          <a href="https://orcid.org/0000-0000-0000-0000" class="text-gray-500 hover:text-black">ORCID</a>
-          <a href="https://arxiv.org/a/your_arxiv_id" class="text-gray-500 hover:text-black">arXiv</a>
+    <section class="grid grid-cols-1 md:grid-cols-2 min-h-[80vh]">
+      <div class="bg-[#eae0d5] flex items-center justify-center p-8">
+        <div class="bg-[#f5ede6] shadow-xl rounded-sm p-6 w-72 text-center">
+          <img src="https://via.placeholder.com/150" alt="Camila Franco" class="rounded-full mx-auto mb-4" />
+          <h2 class="font-bold text-lg">Camila Franco</h2>
+          <div class="w-8 h-[2px] bg-blue-600 my-2 mx-auto"></div>
+          <p class="uppercase text-sm tracking-wide text-gray-600">Astrofísica</p>
+          <div class="flex justify-center space-x-4 mt-6 border-t pt-4">
+            <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </div>
+
+      <div class="flex flex-col justify-center px-8 md:px-16 py-10">
+        <h1 class="text-5xl font-extrabold mb-4">Olá</h1>
+        <h2 class="text-xl font-light text-gray-700 mb-6">Meu perfil e meus projetos</h2>
+        <div class="flex space-x-4 mb-6">
+          <a href="#curriculo" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm">CURRÍCULO</a>
+          <a href="#projetos" class="border border-black px-4 py-2 rounded-full text-sm">PROJETOS</a>
+        </div>
+        <p class="text-gray-700 mb-3">Sou uma pesquisadora apaixonada pelo universo e suas estruturas em larga escala. Trabalho com dados observacionais e modelagens cosmológicas.</p>
+        <p class="text-gray-700">Este é um ótimo lugar para você conhecer meu trabalho, minhas publicações e entrar em contato comigo.</p>
+      </div>
+    </section>
+
+    <!-- Seções futuras -->
+    <section id="curriculo" class="py-20 px-8 bg-gray-50 text-center">
+      <h2 class="text-2xl font-semibold mb-4">Currículo</h2>
+      <p class="text-gray-600">[Informações sobre formações, experiências e afins]</p>
+    </section>
+
+    <section id="projetos" class="py-20 px-8 text-center">
+      <h2 class="text-2xl font-semibold mb-4">Projetos</h2>
+      <p class="text-gray-600">[Breve descrição de projetos ou links]</p>
+    </section>
+
+    <section id="contato" class="py-20 px-8 bg-gray-50 text-center">
+      <h2 class="text-2xl font-semibold mb-4">Contato</h2>
+      <p class="text-gray-600">Email: <a href="mailto:email@example.com" class="text-blue-500 hover:underline">email@example.com</a></p>
     </section>
 
     <footer class="text-center text-sm text-gray-400 py-6">
       &copy; 2025 Camila Franco
     </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a2e0e6bd6d.js" crossorigin="anonymous"></script>
   </body>
 </html>
