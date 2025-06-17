@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camila Franco – Astrophysicist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .card {
-            background: #1e1e1e;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-            width: 320px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        h1 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1rem;
-            opacity: 0.8;
-            margin-bottom: 20px;
-        }
-        .links a, .menu a {
-            display: block;
-            color: #00bcd4;
-            text-decoration: none;
-            padding: 8px 0;
-            font-size: 1rem;
-            transition: color 0.3s;
-        }
-        .links a:hover, .menu a:hover {
-            color: #ff9800;
-        }
-        .menu {
-            margin-top: 15px;
-        }
+      body { font-family: 'Inter', sans-serif; }
     </style>
-</head>
-<body>
-    <div class="card">
-        <h1>Camila Franco</h1>
-        <p>PhD Student | Cosmology</p>
-        <div class="links">
-            <a href="http://lattes.cnpq.br/2163946787730780" target="_blank">Lattes</a>
-            <a href="https://orcid.org/0000-0002-6320-425X" target="_blank">ORCID</a>
-            <a href="https://inspirehep.net/literature?q=a%20Camila.Franco.1" target="_blank">Inspire</a>
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">LinkedIn</a>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-8 border-b border-gray-200">
+      <div class="text-3xl font-bold">Camila Franco</div>
+      <nav class="space-x-6 text-sm">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#research" class="hover:underline">Research</a>
+        <a href="#publications" class="hover:underline">Publications</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col items-start justify-center p-12 md:p-20 max-w-5xl mx-auto">
+      <h1 class="text-4xl md:text-6xl font-light leading-tight">Astrophysics, Large-Scale Structure<br />& Cosmology</h1>
+      <p class="mt-6 text-lg text-gray-600 max-w-2xl">
+        I'm a researcher focused on the structure and evolution of the universe, particularly through galaxy surveys and matter distribution models.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-gray-50 py-16 px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+        <p class="text-gray-700 leading-relaxed">
+          I'm currently a PhD student at [Institution Name], working with the ALFALFA catalogue and observational constraints on cosmological parameters.
+          My background includes physics, data science, and science communication. I'm interested in how we can map and understand the cosmic web using neutral hydrogen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="py-16 px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">Research Interests</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>Large-scale structure of the universe</li>
+          <li>HI galaxy surveys (e.g., ALFALFA)</li>
+          <li>Cosmological parameter estimation</li>
+          <li>Data analysis pipelines for astrophysics</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="bg-gray-50 py-16 px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">Selected Publications</h2>
+        <ul class="space-y-4 text-gray-700">
+          <li>
+            <strong>Measuring the matter fluctuations in the Local Universe with the ALFALFA catalogue</strong><br/>
+            Franco, C. et al., 2024 – <a href="#" class="text-blue-500 hover:underline">arXiv link</a>
+          </li>
+          <!-- Add more here -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+        <p class="text-gray-700">Feel free to reach out via <a href="mailto:email@example.com" class="text-blue-500 hover:underline">email@example.com</a> or connect through the links below.</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="https://github.com/yourusername" class="text-gray-500 hover:text-black">GitHub</a>
+          <a href="https://orcid.org/0000-0000-0000-0000" class="text-gray-500 hover:text-black">ORCID</a>
+          <a href="https://arxiv.org/a/your_arxiv_id" class="text-gray-500 hover:text-black">arXiv</a>
         </div>
-        <div class="menu">
-            <a href="#">Publications</a>
-        </div>
-    </div>
-</body>
+      </div>
+    </section>
+
+    <footer class="text-center text-sm text-gray-400 py-6">
+      &copy; 2025 Camila Franco
+    </footer>
+  </body>
 </html>
